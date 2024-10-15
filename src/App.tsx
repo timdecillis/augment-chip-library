@@ -1,10 +1,10 @@
 import React from "react";
-import PrimaryChip from "./lib/PrimaryChip";
 import "./App.css";
+import AugmentChip from "./lib/AugmentChip";
 
 function App() {
   return <div className="App">
-    <PrimaryChip/>
+    <AugmentChip type='primary' label='test chip' />
   </div>;
 }
 
