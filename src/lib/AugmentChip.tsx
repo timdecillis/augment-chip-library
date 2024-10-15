@@ -1,12 +1,21 @@
 type AugmentChipType = {
-  label: string;
-  type: string;
+  Type: string;
+  Size: string;
+  StartIcon: string;
+  Label: string;
+  IsAnimating: boolean;
+  EndAddOn: string;
+};
+
+function AugmentChip({
+  Type,
+  Size,
+  StartIcon,
+  Label,
+  IsAnimating,
+  EndAddOn,
+}: AugmentChipType) {
+  return <div>{Label}</div>;
 }
 
-function AugmentChip({label, type}: AugmentChipType) {
-  return (
-    <div>{label}</div>
-  )
-}
-
-export default AugmentChip
+export default AugmentChip;
