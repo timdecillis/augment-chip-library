@@ -1,9 +1,9 @@
 import React from 'react'
 
-function primaryChip() {
+function PrimaryChip() {
   return (
     <div>primaryChip</div>
   )
 }
 
-export default primaryChip
+export default PrimaryChip
