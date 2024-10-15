@@ -1,6 +1,10 @@
-function PrimaryChip() {
+type PrimaryChipType = {
+  label: string;
+}
+
+function PrimaryChip({label}: PrimaryChipType) {
   return (
-    <div>primaryChip</div>
+    <div>{label}</div>
   )
 }
 
