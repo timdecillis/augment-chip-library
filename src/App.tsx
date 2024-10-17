@@ -1,18 +1,21 @@
-import React from "react";
 import "./App.css";
 import AugmentChip from "./lib/AugmentChip";
+import Container from "./lib/Container";
 
 function App() {
+  const component = (
+    <AugmentChip
+      Type="Secondary"
+      Size="Medium"
+      StartIcon="none"
+      Label="test chip"
+      IsAnimating={true}
+      EndAddOn="none"
+    />
+  );
   return (
     <div className="App">
-      <AugmentChip
-        Type="Secondary"
-        Size="Medium"
-        StartIcon="none"
-        Label="test chip"
-        IsAnimating={true}
-        EndAddOn="none"
-      />
+      <Container propComponent={component} />
     </div>
   );
 }

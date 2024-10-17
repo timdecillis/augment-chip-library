@@ -1,9 +1,5 @@
-import React from 'react'
-
-function Container() {
-  return (
-    <div>Container</div>
-  )
+function Container({ propComponent }: any) {
+  return <div style={{border: 'black', color: 'green', background: 'black'}} >{propComponent}</div>;
 }
 
-export default Container
+export default Container;

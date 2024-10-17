@@ -24,8 +24,8 @@ function AugmentChip({
     Secondary: 'bar',
     Terniary: 'foobar'
   }
-  console.log(TypeData[Type])
-  return <div className={`${TypeData[Type]}-${Size}-${IsAnimating}-${EndAddOn}`} >{Label}</div>;
+  const elementClass = `${TypeData[Type]}-${Size}-${IsAnimating}-${EndAddOn}`
+  return <div style={{background: 'red', maxWidth: '40px'}} className={elementClass} >{Label}</div>;
 }
 
 export default AugmentChip;
