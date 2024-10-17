@@ -15,7 +15,7 @@ function AugmentChip({
   IsAnimating,
   EndAddOn,
 }: AugmentChipType) {
-  return <div>{Label}</div>;
+  return <div className={`${Type}-${Size}-${IsAnimating}-${EndAddOn}`} >{Label}</div>;
 }
 
 export default AugmentChip;
