@@ -1,4 +1,5 @@
 import styles from "../styles/AugmentChip/types.module.css";
+import '../styles/AugmentChip/AugmentChip.globals.module.css'
 
 type AugmentChipType = {
   Type: string;

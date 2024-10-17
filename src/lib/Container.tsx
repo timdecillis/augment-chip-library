@@ -1,7 +1,9 @@
 import '../styles/Container.module.css'
 
-function Container({ propComponent }: any) {
-  return <div>{propComponent}</div>;
+function Container({ components }: any) {
+  return <div>{
+    components.map((Comp: any, index: number) => <Comp key={index} />)
+    }</div>;
 }
 
 export default Container;
