@@ -15,7 +15,17 @@ function AugmentChip({
   IsAnimating,
   EndAddOn,
 }: AugmentChipType) {
-  return <div className={`${Type}-${Size}-${IsAnimating}-${EndAddOn}`} >{Label}</div>;
+
+  type DataType = {
+    [k: string]: string;
+  }
+  const TypeData: DataType = {
+    Primary: 'foo',
+    Secondary: 'bar',
+    Terniary: 'foobar'
+  }
+  console.log(TypeData[Type])
+  return <div className={`${TypeData[Type]}-${Size}-${IsAnimating}-${EndAddOn}`} >{Label}</div>;
 }
 
 export default AugmentChip;
