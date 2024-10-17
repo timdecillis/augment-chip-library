@@ -20,9 +20,9 @@ function AugmentChip({
     [k: string]: string;
   }
   const TypeData: DataType = {
-    Primary: 'foo',
-    Secondary: 'bar',
-    Terniary: 'foobar'
+    Primary: 'primary',
+    Secondary: 'secondary',
+    Terniary: 'terniary'
   }
   const elementClass = `${TypeData[Type]}-${Size}-${IsAnimating}-${EndAddOn}`
   return <div style={{background: 'red', maxWidth: '40px'}} className={elementClass} >{Label}</div>;
