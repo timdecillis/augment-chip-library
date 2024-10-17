@@ -1,11 +1,12 @@
 .primary {
+  color: black;
   background-color: white;
 }
 
 .secondary {
+  color: white;
   background-color: grey;
 }
 
 .terniary {
-
 }

@@ -5,7 +5,7 @@ import Container from "./lib/Container";
 function App() {
   const component = (
     <AugmentChip
-      Type="Secondary"
+      Type="Primary"
       Size="Medium"
       StartIcon="none"
       Label="test chip"

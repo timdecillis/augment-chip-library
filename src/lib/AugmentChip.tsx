@@ -1,3 +1,5 @@
+import styles from "../styles/AugmentChip/types.module.css";
+
 type AugmentChipType = {
   Type: string;
   Size: string;
@@ -18,14 +20,14 @@ function AugmentChip({
 
   type DataType = {
     [k: string]: string;
-  }
-  const TypeData: DataType = {
-    Primary: 'primary',
-    Secondary: 'secondary',
-    Terniary: 'terniary'
-  }
-  const elementClass = `${TypeData[Type]}-${Size}-${IsAnimating}-${EndAddOn}`
-  return <div style={{background: 'red', maxWidth: '40px'}} className={elementClass} >{Label}</div>;
+  };
+  const typeData: DataType = {
+    Primary: "primary",
+    Secondary: "secondary",
+    Terniary: "terniary",
+  };
+
+  return <div className={styles[typeData[Type]]}>{Label}</div>;
 }
 
 export default AugmentChip;
