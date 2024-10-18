@@ -1,6 +1,9 @@
 .primary {
   color: black;
   background-color: white;
+  border-width: .1em;
+  border-color: grey;
+  border-style: solid;
 }
 
 .secondary {
