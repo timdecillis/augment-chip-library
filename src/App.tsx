@@ -3,7 +3,7 @@ import createChip from "./lib/chipCreator";
 import Container from "./lib/Container";
 
 
-const displayComponents = [createChip("Primary"), createChip("Secondary")];
+const displayComponents = [createChip("Primary", "Small"), createChip("Secondary", "Medium")];
 
 function App() {
   return (
