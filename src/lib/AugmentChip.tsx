@@ -1,5 +1,5 @@
 import styles from "../styles/AugmentChip/types.module.css";
-import '../styles/AugmentChip/AugmentChip.globals.module.css'
+import '../styles/AugmentChip/AugmentChip.globals.css'
 
 type AugmentChipType = {
   Type: string;
@@ -28,7 +28,7 @@ function AugmentChip({
     Terniary: "terniary",
   };
 
-  return <div className={styles[typeData[Type]]}>{Label}</div>;
+  return <div className={`${styles[typeData[Type]]} chip`}>{Label}</div>;
 }
 
 export default AugmentChip;
