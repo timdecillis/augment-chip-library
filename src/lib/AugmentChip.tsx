@@ -28,7 +28,7 @@ function AugmentChip({
     Terniary: "terniary",
   };
 
-  return <div className={`${styles[typeData[Type]]} chip`}>{Label}</div>;
+  return <div className={styles[typeData[Type]]}>{Label}</div>;
 }
 
 export default AugmentChip;
