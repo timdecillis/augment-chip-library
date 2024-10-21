@@ -6,7 +6,7 @@ const createChip = (type: string, size: string) => (props: any) =>
       Type={type}
       Size={size}
       StartIcon="none"
-      Label="test chip"
+      Label="Label"
       IsAnimating={true}
       EndAddOn="none"
       {...props}
