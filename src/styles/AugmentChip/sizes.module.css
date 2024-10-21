@@ -1,14 +1,20 @@
-.primary {
-  color: black;
-  background-color: white;
-  border-width: .1em;
-  border-color: grey;
-  border-style: solid;
+.small {
+  max-width: 79px;
+  max-height: 24px;
+  min-width: 79px;
+  min-height: 24px;
 }
 
-.secondary {
-  background-color: grey;
+.medium {
+  max-width: 103px;
+  max-height: 32px;
+  min-width: 103px;
+  min-height: 32px;
 }
 
-.terniary {
+.large {
+  max-width: 112px;
+  max-height: 36px;
+  min-width: 112px;
+  min-height: 36px;
 }
