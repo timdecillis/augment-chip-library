@@ -3,7 +3,7 @@ import AugmentChip from "./AugmentChip";
 const createChip = (type: string, size: string) => (props: any) =>
   (
     <AugmentChip
-      Type={type}
+      type={type}
       Size={size}
       StartIcon="none"
       Label="Label"

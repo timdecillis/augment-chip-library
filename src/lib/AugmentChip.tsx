@@ -2,7 +2,7 @@ import styles from "../styles/AugmentChip/types.module.css";
 import '../styles/AugmentChip/AugmentChip.globals.css'
 
 type AugmentChipType = {
-  Type: string;
+  type: string;
   Size: string;
   StartIcon: string;
   Label: string;
@@ -11,7 +11,7 @@ type AugmentChipType = {
 };
 
 function AugmentChip({
-  Type,
+  type,
   Size,
   StartIcon,
   Label,
@@ -19,16 +19,7 @@ function AugmentChip({
   EndAddOn,
 }: AugmentChipType) {
 
-  type DataType = {
-    [k: string]: string;
-  };
-  const typeData: DataType = {
-    Primary: "primary",
-    Secondary: "secondary",
-    Terniary: "terniary",
-  };
-
-  return <div className={styles[typeData[Type]]}>{Label}</div>;
+  return <div className={styles[type]}>{Label}</div>;
 }
 
 export default AugmentChip;
