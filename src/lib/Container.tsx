@@ -1,4 +1,4 @@
-import '../styles/Container.css'
+import '../styles/Container.globals.css'
 
 function Container({ components }: any) {
   return <div>{

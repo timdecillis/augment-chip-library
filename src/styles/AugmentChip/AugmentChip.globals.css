@@ -1,6 +1,6 @@
-div {
+.global-augment-chip {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   margin: 1.2em;
   border-radius: 24px;
