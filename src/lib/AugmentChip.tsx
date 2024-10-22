@@ -2,10 +2,10 @@ import types from "../styles/AugmentChip/types.module.css";
 import sizes from "../styles/AugmentChip/sizes.module.css";
 import "../styles/AugmentChip/AugmentChip.globals.css";
 
-type AugmentChipType = {
+type AugmentChipPropsType = {
   type: string;
   size: string;
-  StartIcon: string;
+  startIcon: string;
   Label: string;
   IsAnimating: boolean;
   EndAddOn: string;
@@ -14,12 +14,19 @@ type AugmentChipType = {
 function AugmentChip({
   type,
   size,
-  StartIcon,
+  startIcon,
   Label,
   IsAnimating,
   EndAddOn,
-}: AugmentChipType) {
-  return <div className={`${types[type]} ${sizes[size]}`}>{Label}</div>;
+}: AugmentChipPropsType) {
+  return (
+    <>
+      <div className={`${types[type]} ${sizes[size]}`}>
+        {Label}
+        <i className="fa-solid fa-music"></i>
+      </div>
+    </>
+  );
 }
 
 export default AugmentChip;

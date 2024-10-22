@@ -5,7 +5,7 @@ const createChip = (type: string, size: string) => (props: any) =>
     <AugmentChip
       type={type}
       size={size}
-      StartIcon="none"
+      startIcon="none"
       Label="Label"
       IsAnimating={true}
       EndAddOn="none"
