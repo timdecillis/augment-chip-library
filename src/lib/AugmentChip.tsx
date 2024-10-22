@@ -5,7 +5,7 @@ import "../styles/AugmentChip/AugmentChip.globals.css";
 type AugmentChipPropsType = {
   type: string;
   size: string;
-  startIcon: string;
+  startIcon: any;
   Label: string;
   IsAnimating: boolean;
   EndAddOn: string;
@@ -23,7 +23,7 @@ function AugmentChip({
     <>
       <div className={`${types[type]} ${sizes[size]}`}>
         {Label}
-        <i className="fa-solid fa-music"></i>
+
       </div>
     </>
   );

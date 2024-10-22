@@ -1,11 +1,11 @@
 import AugmentChip from "./AugmentChip";
 
-const createChip = (type: string, size: string) => (props: any) =>
+const createChip = (type: string, size: string, startIcon: any) => (props: any) =>
   (
     <AugmentChip
       type={type}
       size={size}
-      startIcon="none"
+      startIcon={startIcon}
       Label="Label"
       IsAnimating={true}
       EndAddOn="none"

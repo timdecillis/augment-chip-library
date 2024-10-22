@@ -2,8 +2,9 @@ import "./App.css";
 import createChip from "./lib/chipCreator";
 import Container from "./lib/Container";
 
+const icon = <i className="fa-solid fa-music"></i>
 
-const displayComponents = [createChip("primary", "medium"), createChip("secondary", "medium"), createChip("terniary", "medium"), createChip("secondary", 'small'), createChip("secondary", 'medium'), createChip("secondary", 'large')];
+const displayComponents = [createChip("primary", "medium", icon), createChip("secondary", "medium", icon), createChip("terniary", "medium", icon), createChip("secondary", 'small', icon), createChip("secondary", 'medium', icon), createChip("secondary", 'large', icon)];
 
 function App() {
   return (
