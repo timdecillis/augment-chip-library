@@ -3,10 +3,10 @@ import sizes from "../styles/AugmentChip/sizes.module.css";
 import "../styles/AugmentChip/AugmentChip.globals.css";
 
 type AugmentChipPropsType = {
-  type: string;
-  size: string;
+  type: 'primary' | 'secondary' | 'terniary';
+  size: 'small' | 'medium' | 'large';
   startIcon?: any;
-  Label: string;
+  label: string;
   IsAnimating: boolean;
   EndAddOn: string;
 };
@@ -15,7 +15,7 @@ function AugmentChip({
   type,
   size,
   startIcon,
-  Label,
+  label,
   IsAnimating,
   EndAddOn,
 }: AugmentChipPropsType) {
@@ -23,7 +23,7 @@ function AugmentChip({
     <>
       <div className={`global-augment-chip ${types[type]} ${sizes[size]}`}>
         {startIcon}
-        {Label}
+        {label}
       </div>
     </>
   );

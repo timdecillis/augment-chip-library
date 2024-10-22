@@ -13,6 +13,8 @@
 }
 
 .large {
+  --chip-min-height: 36px;
+  --chip-min-width: 112px;
   max-width: 112px;
   max-height: 36px;
   min-width: 112px;

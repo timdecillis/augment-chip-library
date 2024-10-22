@@ -4,8 +4,9 @@
   justify-content: center;
   margin: 1.2em;
   border-radius: 24px;
-  min-width: 100px;
-  min-height: 33px;
+  min-width: var(--chip-min-width, 100px);
+  min-height: var(--chip-min-height, 33px);
   font-weight: bold;
   color: white;
+  background-color: var(--chip-background-color, grey);
 }
