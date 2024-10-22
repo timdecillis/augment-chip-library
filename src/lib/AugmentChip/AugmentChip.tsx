@@ -8,15 +8,16 @@ function AugmentChip({
   size,
   startIcon,
   label,
-  IsAnimating,
+  isAnimating,
   endAddOn,
 }: ChipPropsType) {
   return (
     <>
       <div className={`chip ${types[type]} ${sizes[size]}`}>
-        <div className="row" >
-          {startIcon}
-          {label}
+        <div className="row">
+          <div className="row-item">{startIcon}</div>
+          <div className="row-item">{label}</div>
+          <div className="row-item">{endAddOn}</div>
         </div>
       </div>
     </>

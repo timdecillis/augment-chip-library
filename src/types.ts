@@ -3,7 +3,7 @@ type ChipPropsType = {
   size: "small" | "medium" | "large";
   startIcon?: any;
   label: string;
-  IsAnimating: boolean;
+  isAnimating: boolean;
   endAddOn: string;
 };
 
