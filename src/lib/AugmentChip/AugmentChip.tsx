@@ -1,6 +1,6 @@
 import types from "./types.module.css";
 import sizes from "./sizes.module.css";
-import "./AugmentChip.globals.css";
+import "./globals.css";
 
 type AugmentChipPropsType = {
   type: 'primary' | 'secondary' | 'terniary';
@@ -21,7 +21,7 @@ function AugmentChip({
 }: AugmentChipPropsType) {
   return (
     <>
-      <div className={`global-augment-chip ${types[type]} ${sizes[size]}`}>
+      <div className={`chip ${types[type]} ${sizes[size]}`}>
         {startIcon}
         {label}
       </div>

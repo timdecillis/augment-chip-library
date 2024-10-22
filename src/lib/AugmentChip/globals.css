@@ -1,4 +1,4 @@
-.global-augment-chip {
+.chip {
   display: flex;
   flex-direction: row;
   justify-content: center;
