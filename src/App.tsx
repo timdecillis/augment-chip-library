@@ -5,7 +5,7 @@ import Container from "./lib/Container/Container";
 const icon = <i className="fa-solid fa-music"></i>
 const addOn = <i className="fa-solid fa-chevron-down"></i>
 
-const displayComponents = [createChip("primary", "medium", icon), createChip("secondary", "medium", icon), createChip("terniary", "medium", icon), createChip("secondary", 'small', icon), createChip("secondary", 'medium', icon), createChip("secondary", 'large', icon)];
+const displayComponents = [createChip("primary", "medium", icon, addOn), createChip("secondary", "medium", icon, addOn), createChip("terniary", "medium", icon, addOn), createChip("secondary", 'small', icon, addOn), createChip("secondary", 'medium', icon, addOn), createChip("secondary", 'large', icon, addOn)];
 
 function App() {
   return (
