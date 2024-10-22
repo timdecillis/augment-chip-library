@@ -23,7 +23,7 @@ function AugmentChip({
     <>
       <div className={`${types[type]} ${sizes[size]}`}>
         {Label}
-
+        {startIcon}
       </div>
     </>
   );
