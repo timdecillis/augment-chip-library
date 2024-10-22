@@ -1,4 +1,4 @@
-import AugmentChip from "./AugmentChip";
+import AugmentChip from "../lib/AugmentChip/AugmentChip";
 
 const createChip = (type: string, size: string, startIcon: any) => (props: any) =>
   (
@@ -6,7 +6,7 @@ const createChip = (type: string, size: string, startIcon: any) => (props: any) 
       type={type}
       size={size}
       startIcon={startIcon}
-      Label="Label"
+      label="Label"
       IsAnimating={true}
       EndAddOn="none"
       {...props}

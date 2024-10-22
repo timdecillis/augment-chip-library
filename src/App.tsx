@@ -1,6 +1,6 @@
 import "./App.css";
-import createChip from "./lib/chipCreator";
-import Container from "./lib/Container";
+import createChip from "./utils/chipCreator";
+import Container from "./lib/Container/Container";
 
 const icon = <i className="fa-solid fa-music"></i>
 

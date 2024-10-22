@@ -1,6 +1,6 @@
-import types from "../styles/AugmentChip/types.module.css";
-import sizes from "../styles/AugmentChip/sizes.module.css";
-import "../styles/AugmentChip/AugmentChip.globals.css";
+import types from "./types.module.css";
+import sizes from "./sizes.module.css";
+import "./AugmentChip.globals.css";
 
 type AugmentChipPropsType = {
   type: 'primary' | 'secondary' | 'terniary';
