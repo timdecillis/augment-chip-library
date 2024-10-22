@@ -3,8 +3,8 @@ import sizes from "./sizes.module.css";
 import "./globals.css";
 
 type AugmentChipPropsType = {
-  type: 'primary' | 'secondary' | 'terniary';
-  size: 'small' | 'medium' | 'large';
+  type: "primary" | "secondary" | "terniary";
+  size: "small" | "medium" | "large";
   startIcon?: any;
   label: string;
   IsAnimating: boolean;
@@ -22,8 +22,10 @@ function AugmentChip({
   return (
     <>
       <div className={`chip ${types[type]} ${sizes[size]}`}>
-        {startIcon}
-        {label}
+        <div className="row" >
+          {startIcon}
+          {label}
+        </div>
       </div>
     </>
   );

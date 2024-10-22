@@ -1,8 +1,13 @@
 .chip {
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  align-items: center;
   margin: 1.2em;
   border-radius: 24px;
   font-weight: bold;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
 }

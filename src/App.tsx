@@ -3,6 +3,7 @@ import createChip from "./utils/chipCreator";
 import Container from "./lib/Container/Container";
 
 const icon = <i className="fa-solid fa-music"></i>
+const addOn = <i className="fa-solid fa-chevron-down"></i>
 
 const displayComponents = [createChip("primary", "medium", icon), createChip("secondary", "medium", icon), createChip("terniary", "medium", icon), createChip("secondary", 'small', icon), createChip("secondary", 'medium', icon), createChip("secondary", 'large', icon)];
 
