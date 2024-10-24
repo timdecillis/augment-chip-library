@@ -15,3 +15,23 @@
 .row-item {
   margin: 0.25em;
 }
+
+.label-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 15%; /* Adjust as necessary */
+}
+
+.label {
+  display: inline-block;
+  animation: scroll 10s linear infinite; /* Adjust duration as necessary */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

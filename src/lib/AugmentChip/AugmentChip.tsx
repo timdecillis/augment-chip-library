@@ -16,7 +16,11 @@ function AugmentChip({
       <div className={`chip ${types[type]} ${sizes[size]}`}>
         <div className="row">
           <div className="row-item">{startIcon}</div>
-          <div className="row-item">{label}</div>
+          <div className="row-item label-container">
+            <div className={`label ${isAnimating ? "scroll" : ""}`}>
+              {label}
+            </div>
+          </div>
           <div className="row-item">{endAddOn}</div>
         </div>
       </div>
