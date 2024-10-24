@@ -19,12 +19,12 @@
 .label-container {
   overflow: hidden;
   white-space: nowrap;
-  width: 15%; /* Adjust as necessary */
+  width: 15%;
 }
 
 .label {
   display: inline-block;
-  animation: scroll 10s linear infinite; /* Adjust duration as necessary */
+  animation: scroll 10s linear infinite;
 }
 
 @keyframes scroll {
