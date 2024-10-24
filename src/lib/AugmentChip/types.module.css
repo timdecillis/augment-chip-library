@@ -4,11 +4,13 @@
   border-width: 0.1em;
   border-color: grey;
   border-style: solid;
-  --chip-background-color: white; /* Set variable for background color */
 }
 
 .secondary {
-  --chip-background-color: grey; /* Set variable for background color */
   background-color: grey;
+  color: white;
+}
+
+.terniary {
   color: white;
 }
