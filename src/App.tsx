@@ -1,17 +1,9 @@
 import "./App.css";
-import createChip from "./utils/chipCreator";
 import Container from "./lib/Container/Container";
 import { icon, addOn } from "./icons";
+import { createChipArray } from "./utils/chipCreator";
 
-const chipArrayCreator = (
-  arrays: []
-) => {
-  arrays.map((array) => {
-    return createChip(...array);
-  });
-};
-
-const chipParameters = [
+const chipArguments = [
   ["label", "primary", "medium", icon, addOn, false],
   ["label", "secondary", "medium", icon, addOn, false],
   ["label", "terniary", "medium", icon, addOn, false],
@@ -27,7 +19,7 @@ const chipParameters = [
   ],
 ];
 
-const displayComponents = chipArrayCreator(chipParameters);
+const displayComponents = createChipArray(chipArguments);
 
 function App() {
   return (

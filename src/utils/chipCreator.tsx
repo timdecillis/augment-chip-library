@@ -1,6 +1,6 @@
 import AugmentChip from "../lib/AugmentChip/AugmentChip";
 
-const createChip = (label: string, type: string, size: string, startIcon: any, endAddOn: any, isAnimating: boolean = true) => (props: any) =>
+export const createChip = (label: string, type: string, size: string, startIcon: any, endAddOn: any, isAnimating: boolean = true) => (props: any) =>
   (
     <AugmentChip
       type={type}
@@ -12,4 +12,12 @@ const createChip = (label: string, type: string, size: string, startIcon: any, e
       {...props}
     />
   );
-export default createChip;
+
+  export const createChipArray = (
+    arrays: []
+  ) => {
+    arrays.map((array) => {
+      return createChip(...array);
+    });
+  };
+
