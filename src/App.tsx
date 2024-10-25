@@ -1,12 +1,12 @@
 import "./App.css";
 import createChip from "./utils/chipCreator";
 import Container from "./lib/Container/Container";
+import { icon, addOn } from "./icons";
 
-const icon = <i className="fa-solid fa-music"></i>;
-const addOn = <i className="fa-solid fa-chevron-down"></i>;
+type chipArrayArguments = [string, string, string, JSX.Element, JSX.Element,(boolean | undefined)]
 
 const chipArrayCreator = (
-  arrays: [string, string, string, JSX.Element, JSX.Element,(boolean | undefined)][]
+  arrays: []
 ) => {
   arrays.map((array) => {
     return createChip(...array);
