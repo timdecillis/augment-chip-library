@@ -1,5 +1,6 @@
 import AugmentChip from "../lib/AugmentChip/AugmentChip";
 import { icon, addOn } from "../icons";
+import { ChipArgumentsArrayType } from "../types";
 
 const createChip =
   (
@@ -23,16 +24,17 @@ const createChip =
       />
     );
 
-const createChipArray = (arrays: []) => {
-  arrays.map((array) => {
-    return createChip(...array);
+const createChipArray = (chipArgumentsArray: ChipArgumentsArrayType[]) => {
+  return chipArgumentsArray.map((chipArguments) => {
+    console.log('chip arguments:', chipArguments)
+    return createChip(...chipArguments);
   });
 };
 
-const chipArguments = [
+const chipArgumentsArrayLiteral = [
   ["label", "primary", "medium", icon, addOn, false],
   ["label", "secondary", "medium", icon, addOn, false],
-  ["label", "terniary", "medium", icon, addOn, false],
+  ["label", "tertiary", "medium", icon, addOn, false],
   ["label", "secondary", "small", icon, addOn, false],
   ["label", "secondary", "medium", icon, addOn, false],
   [
@@ -45,5 +47,5 @@ const chipArguments = [
   ],
 ];
 
-const displayComponents = createChipArray(chipArguments);
+const displayComponents = createChipArray(chipArgumentsArrayLiteral);
 export default displayComponents;

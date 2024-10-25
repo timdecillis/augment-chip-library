@@ -1,5 +1,5 @@
 export type ChipPropsType = {
-  type: "primary" | "secondary" | "terniary";
+  type: "primary" | "secondary" | "tertiary";
   size: "small" | "medium" | "large";
   startIcon?: any;
   label: string;
@@ -7,7 +7,7 @@ export type ChipPropsType = {
   endAddOn: string;
 };
 
-export type chipArrayArguments = [
+export type ChipArgumentsArrayType = [
   string,
   string,
   string,
