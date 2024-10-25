@@ -13,5 +13,5 @@ export type ChipArgumentsArrayType = [
   string,
   JSX.Element,
   JSX.Element,
-  boolean | undefined
+  boolean
 ];
