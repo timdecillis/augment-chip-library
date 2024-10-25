@@ -1,7 +1,7 @@
 import types from "./types.module.css";
 import sizes from "./sizes.module.css";
 import "./globals.css";
-import ChipPropsType from "../../types";
+import { ChipPropsType } from "../../types";
 
 function AugmentChip({
   type,

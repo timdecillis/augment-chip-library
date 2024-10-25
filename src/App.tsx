@@ -3,8 +3,6 @@ import createChip from "./utils/chipCreator";
 import Container from "./lib/Container/Container";
 import { icon, addOn } from "./icons";
 
-type chipArrayArguments = [string, string, string, JSX.Element, JSX.Element,(boolean | undefined)]
-
 const chipArrayCreator = (
   arrays: []
 ) => {

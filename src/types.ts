@@ -1,4 +1,4 @@
-type ChipPropsType = {
+export type ChipPropsType = {
   type: "primary" | "secondary" | "terniary";
   size: "small" | "medium" | "large";
   startIcon?: any;
@@ -7,4 +7,11 @@ type ChipPropsType = {
   endAddOn: string;
 };
 
-export default ChipPropsType;
+export type chipArrayArguments = [
+  string,
+  string,
+  string,
+  JSX.Element,
+  JSX.Element,
+  boolean | undefined
+];
