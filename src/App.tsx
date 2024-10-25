@@ -6,7 +6,7 @@ const icon = <i className="fa-solid fa-music"></i>;
 const addOn = <i className="fa-solid fa-chevron-down"></i>;
 
 const chipArrayCreator = (
-  arrays: [string, string, string, JSX.Element, JSX.Element, boolean?][]
+  arrays: [string, string, string, JSX.Element, JSX.Element,(boolean | undefined)][]
 ) => {
   arrays.map((array) => {
     return createChip(...array);
