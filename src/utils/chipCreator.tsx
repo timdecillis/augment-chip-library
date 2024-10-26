@@ -26,7 +26,6 @@ const createChip =
 
 const createChipArray = (chipArgumentsArray: ChipArgumentsArrayType[]) => {
   return chipArgumentsArray.map((chipArguments) => {
-    console.log('chip arguments:', chipArguments)
     return createChip(...chipArguments);
   });
 };
@@ -44,7 +43,7 @@ const chipArgumentsArrayLiteral: ChipArgumentsArrayType[] = [
     "large",
     icon,
     addOn,
-    false,
+    true,
   ],
 ];
 
