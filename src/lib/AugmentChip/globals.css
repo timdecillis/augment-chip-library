@@ -19,8 +19,7 @@
 .label-container {
   overflow: hidden;
   white-space: nowrap;
-  width: 15%;
-  max-width: 5em;
+  max-width: 2.5em;
   min-width: 2.5em;
 }
 
