@@ -13,7 +13,10 @@ function AugmentChip({
 }: ChipPropsType) {
   return (
     <>
-      <div className={`chip ${types[type]} ${sizes[size]}`}>
+      <button
+        style={{ cursor: "pointer" }}
+        className={`chip ${types[type]} ${sizes[size]}`}
+      >
         <div className="row">
           <div className="row-item">{startIcon}</div>
           <div className="row-item label-container">
@@ -21,9 +24,27 @@ function AugmentChip({
               {label}
             </div>
           </div>
-          <div className="row-item">{endAddOn}</div>
+          <div className="row-item end-addon-container">
+            <select
+              className="end-addon-select"
+              defaultValue="default"
+              style={{
+                padding: "0",
+                margin: "0",
+                border: "none",
+                background: "transparent",
+              }}
+            >
+              <option value="default" disabled hidden>
+                {endAddOn}
+              </option>
+              <option value="dog">Dog</option>
+              <option value="cat">Cat</option>
+              <option value="hamster">Hamster</option>
+            </select>
+          </div>
         </div>
-      </div>
+      </button>
     </>
   );
 }
