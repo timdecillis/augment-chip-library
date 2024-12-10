@@ -36,6 +36,7 @@ function AugmentChip({
               }}
             >
               <option value="default" disabled hidden>
+                Add On
                 {endAddOn}
               </option>
               <option value="dog">Dog</option>
