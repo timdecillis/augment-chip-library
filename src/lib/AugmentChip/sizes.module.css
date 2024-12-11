@@ -18,3 +18,10 @@
   min-width: 112px;
   min-height: 36px;
 }
+
+.xLarge {
+  max-width: 112px;
+  max-height: 36px;
+  min-width: 112px;
+  min-height: 36px;
+}
