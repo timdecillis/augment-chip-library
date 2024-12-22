@@ -30,7 +30,6 @@ const createChipArray = (chipArgumentsArray: ChipArgumentsArrayType[]) => {
   });
 };
 
-
 const chipArgumentsArrayLiteral: ChipArgumentsArrayType[] = [
   ["label", "primary", "medium", icon, addOn, false],
   ["label", "secondary", "medium", icon, addOn, false],
@@ -48,4 +47,5 @@ const chipArgumentsArrayLiteral: ChipArgumentsArrayType[] = [
 ];
 
 const displayComponents = createChipArray(chipArgumentsArrayLiteral);
+
 export default displayComponents;
