@@ -37,7 +37,7 @@ const chipArgumentsArrayLiteral: ChipArgumentsArrayType[] = [
   ["label", "secondary", "small", icon, addOn, false],
   ["label", "secondary", "medium", icon, addOn, false],
   [
-    "this is a really long label hey hey hey this is a long label",
+    "this is a really really really long label hey hey hey this is a long label",
     "secondary",
     "large",
     icon,
