@@ -28,3 +28,7 @@
   display: inline-block;
   animation: scroll 9s linear infinite;
 }
+
+.chip-label {
+  background-color: bisque;
+}
