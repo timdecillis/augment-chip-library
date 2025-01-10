@@ -30,6 +30,7 @@
 }
 
 .chip-label {
+  color: aquamarine;
   background-color: bisque;
   display: flex;
   flex-direction: column;
